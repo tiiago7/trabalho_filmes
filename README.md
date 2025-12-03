@@ -1,8 +1,7 @@
+
 # 🎬 Sistema de Gerenciamento de Filmes
 
 Aplicação Full Stack com **React**, **Node.js**, **Express** e **MongoDB**, permitindo cadastrar, listar, editar e excluir filmes.
-
----
 
 ## 📌 Funcionalidades
 
@@ -14,17 +13,14 @@ Aplicação Full Stack com **React**, **Node.js**, **Express** e **MongoDB**, pe
 - Interface simples e funcional  
 
 Cada filme contém:
-
 - Título  
 - Descrição  
 - Ano  
 - URL da imagem  
 
----
-
 ## 🏗️ Tecnologias Utilizadas
 
-### **Backend**
+### Backend
 - Node.js  
 - Express  
 - MongoDB  
@@ -33,31 +29,80 @@ Cada filme contém:
 - CORS  
 - Dotenv  
 
-### **Frontend**
+### Frontend
 - React  
 - React Router DOM  
 - Axios  
 - JavaScript  
 
----
+## 🚀 Como executar o projeto
 
-# 🚀 Como executar o projeto
-
-## 1️⃣ Pré-requisitos
+### Pré-requisitos
 - Node.js instalado  
 - MongoDB instalado e rodando  
 - Git instalado  
 
----
-
-# ▶️ Executando o Backend
-
-```bash
+## ▶️ Executando o Backend
+```
 cd backend
 npm install
 npm run dev
+```
 
-O servidor ficará disponível em:
+Servidor:  
 http://localhost:5000
 
-🌐 Executando o Frontend
+## 🌐 Executando o Frontend
+```
+cd frontend
+npm install
+npm start
+```
+
+Frontend:  
+http://localhost:3000
+
+## 🔌 Conexão entre Frontend e Backend
+Arquivo `frontend/src/api.js`:
+```
+baseURL: "http://localhost:5000/api"
+```
+
+## 📁 Estrutura do Projeto
+```
+trabalho_filmes/
+│
+├── backend/
+│   ├── server.js
+│   ├── package.json
+│   ├── .env
+│   └── src/
+│       ├── models/
+│       ├── controllers/
+│       └── routes/
+│
+└── frontend/
+    ├── public/
+    ├── src/
+    │   ├── pages/
+    │   ├── components/
+    │   ├── api.js
+    │   └── App.js
+    └── package.json
+```
+
+## 🧪 Teste do Sistema
+
+1. Acesse `http://localhost:3000`  
+2. Clique em "Novo"  
+3. Preencha os dados  
+4. Salve  
+5. Veja o filme listado  
+6. Teste editar e excluir  
+
+## 📌 Observação
+Por padrão, projetos Git não incluem `node_modules`.  
+Mas se for apenas para entregar para o professor, não há problema.
+
+## 📚 Autor
+Projeto desenvolvido para fins acadêmicos.
