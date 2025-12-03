@@ -57,3 +57,7 @@ cd backend
 npm install
 npm run dev
 
+O servidor ficará disponível em:
+http://localhost:5000
+
+🌐 Executando o Frontend
