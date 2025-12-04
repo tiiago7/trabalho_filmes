@@ -6,7 +6,7 @@ export default function NewFilmePage() {
   const navigate = useNavigate();
 
   function submit(dados) {
-    api.post("/filmes", dados).then(() => navigate("/"));
+    api.post("/filmes", novofilme).then(() => navigate("/"));
   }
 
   return <FilmeForm onSubmit={submit} />;
