@@ -100,9 +100,6 @@ trabalho_filmes/
 5. Veja o filme listado  
 6. Teste editar e excluir  
 
-## 📌 Observação
-Por padrão, projetos Git não incluem `node_modules`.  
-Mas se for apenas para entregar para o professor, não há problema.
 
 ## 📚 Autor
 Projeto desenvolvido para fins acadêmicos.
